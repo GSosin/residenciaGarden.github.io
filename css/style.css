@@ -375,6 +375,8 @@ ul.search li a:hover {
 }
 
 .build_box .quote_btn {
+     background-color: #fff;
+     color: rgba(0, 0, 0, 0.6);
      font-size: 18px;
      padding: 13px 0;
      font-weight: bold;
@@ -382,6 +384,11 @@ ul.search li a:hover {
      border-radius: 50px;
      text-transform: none;
      height: 61px;
+}
+
+.build_box .quote_btn:hover {
+     background-color: #8fdbd6;
+     color: #fff;
 }
 
 #myCarousel .carousel-control-prev,
@@ -505,7 +512,6 @@ ul.search li a:hover {
 
 .plan_bax figure img {
      width: 100%;
-     border: rgba(166, 166, 166,0.35) solid 25px;
 }
 
 .plan_text {
@@ -566,6 +572,7 @@ ul.search li a:hover {
 .brid figure img {
      width: 100%;
      border-radius: 25px;
+     height: 230px;
 }
 
 .brid h3 {
