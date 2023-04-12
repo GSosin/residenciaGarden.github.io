@@ -73,7 +73,7 @@ h6 {
      padding: 0 0 10px 0;
      font-weight: normal;
      line-height: normal;
-     color: #111111;
+     color: #fff;
      margin: 0
 }
 
@@ -118,7 +118,7 @@ h3 a,
 h4 a,
 h5 a,
 h6 a {
-     color: #212121;
+     color: #fff;
      text-decoration: none!important;
      opacity: 1
 }
@@ -269,6 +269,7 @@ button {
      width: 100%;
      height: 90px;
      padding: 29px 20px;
+     background-color: rgba(255,255,255,0.61);
 }
 
 .logo a {
@@ -276,6 +277,10 @@ button {
      line-height: 25px;
      color: #fff;
      font-weight: bold;
+}
+
+.logo img {
+     width: 120px;
 }
 
 
@@ -289,8 +294,8 @@ button {
 
 .navigation.navbar-dark .navbar-nav .nav-link {
      padding: 0 35px;
-     color: #3f3730;
-     font-size: 17px;
+     color: rgba(0,0,0,.6);
+     font-size: 22px;
      line-height: 20px;
      font-weight: 600;
 }
@@ -327,10 +332,11 @@ ul.search li a:hover {
 /** banner section **/
 
 .full_bg {
-     background: url(../images/banner2.jpg);
+     background: url('../images/residenciaGardenHeader.webp');
      background-size: 100% 100%;
      background-position: center;
      background-repeat: no-repeat;
+     background-size: cover;
 }
 
 .banner_main {
@@ -349,16 +355,16 @@ ul.search li a:hover {
 
 .build_box p {
      color: #fff;
-     font-size: 17px;
+     font-size: 20px;
      line-height: 30px;
-     font-weight: normal;
+     font-weight: 700;
      margin-bottom: 55px;
 }
 
 .build_box h1 {
-     font-size: 80px;
+     font-size: 70px;
      font-weight: bold;
-     color: #413c32;
+     color: #8fdbd6;
      line-height: 95px;
      padding-bottom: 20px;
      display: block;
@@ -371,7 +377,7 @@ ul.search li a:hover {
 .build_box .quote_btn {
      font-size: 18px;
      padding: 13px 0;
-     font-weight: normal;
+     font-weight: bold;
      max-width: 228px;
      border-radius: 50px;
      text-transform: none;
@@ -395,13 +401,13 @@ ul.search li a:hover {
      width: 25px;
      height: 25px;
      border-radius: 30px;
-     background: #252525;
+     background: rgba(0,0,0,.6);
      margin: 6px 0;
      cursor: pointer;
 }
 
 .banner .carousel-indicators .active {
-     background-color: #e6615a;
+     background-color: #8fdbd6;
 }
 
 
@@ -414,11 +420,12 @@ ul.search li a:hover {
 
 .titlepage h2 {
      font-size: 40px;
-     color: #252525;
+     color: rgba(0,0,0,.6);
      line-height: 40px;
      font-weight: bold;
      padding-top: 8px !important;
      padding: 0;
+     text-align: center;
 }
 
 .titlepage span {
@@ -437,7 +444,7 @@ ul.search li a:hover {
 
 .read_more {
      font-size: 17px;
-     background-color: #413c31;
+     background-color: #8fdbd6;
      color: #fff;
      padding: 6px 0px;
      width: 100%;
@@ -445,13 +452,13 @@ ul.search li a:hover {
      text-align: center;
      display: inline-block;
      transition: ease-in all 0.5s;
-     font-weight: 500;
+     font-weight: bold;
      border-radius: 5px;
      height: 43px;
 }
 
 .read_more:hover {
-     background: #e6615a;
+     background-color: rgba(0,0,0,0.8);
      color: #fff;
      transition: ease-in all 0.5s;
 }
@@ -485,10 +492,6 @@ ul.search li a:hover {
 /* our plane */
 
 .plane {
-     background: url(../images/plan_bg.png);
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     background-position: center;
      padding-top: 90px;
 }
 
@@ -502,17 +505,17 @@ ul.search li a:hover {
 
 .plan_bax figure img {
      width: 100%;
-     border: #fff solid 25px;
+     border: rgba(166, 166, 166,0.35) solid 25px;
 }
 
 .plan_text {
-     background-color: #f8d98f;
+     background-color: rgba(143, 219, 214,0.5);
      cursor: pointer;
      padding: 49px 40px;
 }
 
 .plan_text h3 {
-     color: #252525;
+     color: rgba(0,0,0,.6);
      font-weight: bold;
      font-size: 20px;
      line-height: 22px;
@@ -536,16 +539,6 @@ ul.search li a:hover {
      left: 0;
      right: 0;
      opacity: 0;
-     transition: ease-in all 0.5s;
-}
-
-#ho_plan:hover.plan_text .read_more {
-     opacity: 1 !important;
-     transition: ease-in all 0.5s;
-}
-
-#ho_plan:hover.plan_text h3 {
-     color: #fff;
      transition: ease-in all 0.5s;
 }
 
@@ -576,7 +569,7 @@ ul.search li a:hover {
 }
 
 .brid h3 {
-     color: #252525;
+     color: rgba(0,0,0,.6);
      font-weight: 400;
      font-size: 24px;
      line-height: 31px;
@@ -595,10 +588,10 @@ ul.search li a:hover {
 /** about section **/
 
 .about {
-     background: url(../images/about_bg.jpg);
+     /* background: url(../images/about_bg.jpg);
      background-position: center;
      background-repeat: no-repeat;
-     background-size: 100% 100%;
+     background-size: 100% 100%; */
      margin-top: 90px;
      padding: 90px 0;
 }
@@ -660,7 +653,7 @@ ul.search li a:hover {
      top: 43%;
      right: 14px;
      z-index: 9999;
-     background: #e6615a;
+     background: #8fdbd6;
      padding: 15px 27px;
      font-weight: bold;
      color: #fff;
@@ -681,7 +674,7 @@ ul.search li a:hover {
 }
 
 .marriage_text h3 {
-     color: #252525;
+     color: rgba(0,0,0,.6);
      font-size: 24px;
      line-height: 25px;
      font-weight: bold;
@@ -707,7 +700,7 @@ ul.search li a:hover {
 }
 
 .marriage_text h4 strong:hover {
-     color: #e6615a;
+     color: #8fdbd6;
      cursor: pointer;
      padding-bottom: 0;
 }
@@ -781,7 +774,7 @@ ul.search li a:hover {
      height: 21px;
      border-radius: 30px;
      background: #ddd;
-     border: #252525 solid 4px;
+     border: rgba(0,0,0,.6) solid 4px;
 }
 
 .says_ban .carousel-indicators .active {
@@ -797,7 +790,7 @@ ul.search li a:hover {
 /** contact section **/
 
 .contact {
-     background: #252525;
+     background: rgba(166, 166, 166,0.25);
      padding-bottom: 20px;
      margin-top: 160px;
 }
@@ -820,7 +813,7 @@ ul.lacation {
 }
 
 ul.lacation li {
-     color: #e6615a;
+     color: #8fdbd6;
      font-size: 17px;
      font-weight: 500;
      padding-right: 34px;
@@ -836,7 +829,7 @@ ul.lacation li:last-child {
 ul.lacation li i {
      margin-right: 8px;
      font-size: 30px;
-     border: #e6615a solid 1px;
+     border: #8fdbd6 solid 1px;
      width: 50px;
      height: 45px;
      display: flex;
@@ -849,7 +842,7 @@ ul.lacation li i {
 }
 
 .contact .titlepage h2 {
-     color: #fff;
+     color: #818383;
 }
 
 .contact .titlepage h2::before {
@@ -884,7 +877,7 @@ ul.lacation li i {
 .main_form .send_btn {
      font-size: 17px;
      transition: ease-in all 0.5s;
-     background-color: #e6615a;
+     background-color: #8fdbd6;
      text-transform: uppercase;
      color: #fff;
      padding: 8px 0px;
@@ -899,7 +892,7 @@ ul.lacation li i {
 .main_form .send_btn:hover {
      background-color: #fff;
      transition: ease-in all 0.5s;
-     color: #e6615a;
+     color: #8fdbd6;
 }
 
 #request *::placeholder {
@@ -927,7 +920,7 @@ ul.social_icon li a i {
 }
 
 ul.social_icon li a i:hover {
-     color: #e6615a;
+     color: #8fdbd6;
 }
 
 
@@ -937,7 +930,7 @@ ul.social_icon li a i:hover {
 /** footer **/
 
 .footer {
-     background: #252525;
+     background: rgba(0,0,0,.6);
 }
 
 .copyright p {
@@ -1008,4 +1001,12 @@ ul.social_icon li a i:hover {
 .buttonCenter {
      display: flex;
      justify-content: center;
+}
+
+.aboutUs p {
+     font-size: 20px;
+}
+.aboutUs .subtitle {
+     margin-top: 10px;
+     
 }
