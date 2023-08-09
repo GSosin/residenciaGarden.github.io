@@ -1,305 +1,411 @@
 <!DOCTYPE html>
-<html lang="en"> 
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Garden - Residencia Garden</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-      <!--[if lt IE 9]>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- site metas -->
+    <title>Garden - Residencia Garden</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
+    ><![endif]-->
+  </head>
+  <!-- body -->
+  <body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header class="full_bg">
+      <!-- header inner -->
+      <div class="header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+              <div class="full">
+                <div class="center-desk">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="./images/logoResidencia.png"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+              <nav class="navigation navbar navbar-expand-md navbar-dark">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarsExample04"
+                  aria-controls="navbarsExample04"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav mr-auto custom-navbar">
+                    <li class="nav-item hola">
+                      <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#servicios">Ofrecemos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header class="full_bg">
-         <!-- header inner -->
-         <div class="header">
-            <div class="container">
-               <div class="row">
-                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
-                     <div class="full">
-                        <div class="center-desk">
-                           <div class="logo">
-                              <a href="index.html"><img src="./images/logoResidencia.png" /></a>
-                           </div>
-                        </div>
-                     </div>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main" id="inicio">
+        <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container">
+                <div class="carousel-caption banner_po">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-9">
+                      <div class="build_box">
+                        <h1>LOS MEJORES CUIDADOS PARA CADA NECESIDAD</h1>
+                        <p>
+                          Nuestra institución está creada y dirigida por un
+                          equipo profesional de médicos especialistas con más de
+                          30 años de experiencia en la asistencia integral a
+                          adultos mayores.
+                        </p>
+                        <a
+                          class="read_more quote_btn"
+                          href="#contacto"
+                          role="button"
+                          >contáctenos</a
+                        >
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample04">
-                           <ul class="navbar-nav mr-auto custom-navbar">
-                              <li class="nav-item hola">
-                                 <a class="nav-link" href="inicio.html">Inicio</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#nosotros">Nosotros</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#servicios">Ofrecemos</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#galeria">Galeria</a>
-                              </li>
-                              <li class="nav-item">
-                                 <a class="nav-link" href="#contacto">Contacto</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-               </div>
+                </div>
+              </div>
             </div>
-         </div>
-         <!-- end header inner -->
-         <!-- end header -->
-         <!-- banner -->
-         <section class="banner_main" id="inicio">
-            <div id="myCarousel" class="carousel slide banner" data-ride="carousel">
-               <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
-               </ol>
-               <div class="carousel-inner">
-                  <div class="carousel-item active">
-                     <div class="container">
-                        <div class="carousel-caption  banner_po">
-                           <div class="row">
-                              <div class="col-lg-8 col-md-9 ">
-                                 <div class="build_box">
-                                    <h1>Espacio mayores </h1>
-                                    <p>Nuestra institución está creada y dirigida por un
-                                       equipo profesional de médicos especialistas con
-                                       más de 30 años de experiencia en la asistencia
-                                       integral a adultos mayores.</p>
-                                    <a class="read_more quote_btn" href="#contacto" role="button">contáctenos</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="carousel-caption banner_po">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-9">
+                      <div class="build_box">
+                        <h1>LOS MEJORES CUIDADOS PARA CADA NECESIDAD</h1>
+                        <p>
+                          Residencia de corta y larga estadía concebida con el
+                          confort, la excelencia médica y calidez humana que
+                          nuestros mayores necesitan para desarrollar sus
+                          actividades cotidianas y su proyecto de vida.
+                        </p>
+                        <a
+                          class="read_more quote_btn"
+                          href="#contact"
+                          role="button"
+                          >contáctenos</a
+                        >
+                      </div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="carousel-caption  banner_po">
-                           <div class="row">
-                              <div class="col-lg-8 col-md-9 ">
-                                 <div class="build_box">
-                                    <h1>Espacio mayores </h1>
-                                    <p>Residencia de corta y larga estadía
-                                       concebida con el confort, la excelencia
-                                       médica y calidez humana que nuestros mayores
-                                       necesitan para desarrollar sus actividades
-                                       cotidianas y su proyecto de vida.</p>
-                                    <a class="read_more quote_btn" href="#contact" role="button">contáctenos</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="carousel-item">
-                     <div class="container">
-                        <div class="carousel-caption  banner_po">
-                           <div class="row">
-                              <div class="col-lg-8 col-md-9 ">
-                                 <div class="build_box">
-                                    <h1>Espacio mayores </h1>
-                                    <p>Residencia de corta y larga estadía
-                                       concebida con el confort, la excelencia
-                                       médica y calidez humana que nuestros mayores
-                                       necesitan para desarrollar sus actividades
-                                       cotidianas y su proyecto de vida.</p>
-                                    <a class="read_more quote_btn" href="#contact" role="button">contáctenos</a>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-               <i class="fa fa-angle-left" aria-hidden="true"></i>
-               <span class="sr-only">Previous</span>
-               </a>
-               <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-               <i class="fa fa-angle-right" aria-hidden="true"></i>
-               <span class="sr-only">Next</span>
-               </a>
+                </div>
+              </div>
             </div>
-         </section>
-      </header>
-      <!-- end banner -->
-      <!-- play -->
-      <!-- end play -->
-      <!-- our plane -->
-      <div class="plane" id="servicios">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="titlepage">
-                     <h2>Servicios</h2>
-                     <span>Sabemos que una buena calidad de vida incluye además del cuidado de la salud, un proyecto de vida entusiasta que facilite el encuentro con los pares y los seres queridos.</span>
+            <div class="carousel-item">
+              <div class="container">
+                <div class="carousel-caption banner_po">
+                  <div class="row">
+                    <div class="col-lg-8 col-md-9">
+                      <div class="build_box">
+                        <h1>LOS MEJORES CUIDADOS PARA CADA NECESIDAD</h1>
+                        <p>
+                          Residencia de corta y larga estadía concebida con el
+                          confort, la excelencia médica y calidez humana que
+                          nuestros mayores necesitan para desarrollar sus
+                          actividades cotidianas y su proyecto de vida.
+                        </p>
+                        <a
+                          class="read_more quote_btn"
+                          href="#contact"
+                          role="button"
+                          >contáctenos</a
+                        >
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="plan_bax text_align_center">
-                     <figure><img src="images/residenciaAdultos6.jpg" alt="#"/></figure>
-                     <div  id="ho_plan" class="plan_text">
-                        <h3>INSTALACIONES</h3>
-                        <p>Las características edilicias y el equipamiento del emprendimiento,
-                           obedecen a criterios de calidad premium y de excelencia única.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="plan_bax text_align_center">
-                     <figure><img src="images/residenciaAdultos13.png" alt="#"/></figure>
-                     <div  id="ho_plan" class="plan_text">
-                        <h3>ACTIVIDADES</h3>
-                        <p>Actividades grupales recreativo-terapéuticas que estimulan el funcionamiento físico y cognitivo, y favorecen la interacción social. </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="plan_bax text_align_center">
-                     <figure><img src="https://residenciagalia.com.ar/wp-content/uploads/2019/07/Galia-3-3.jpg" alt="#"/></figure>
-                     <div  id="ho_plan" class="plan_text">
-                        <h3>SERVICIOS</h3>
-                        <p>Somos los primeros en trabajar con un novedoso
-                           enfoque centrado en la persona, enfocando nuestro
-                           servicio en tres pilares fundamentales: <br />
-                           EXPERIENCIA <br />
-                           FORMACIÓN PROFESIONAL
-                           CALIDEZ HUMANA </p>
-                     </div>
-                  </div>
-               </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#myCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#myCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+    </header>
+    <!-- end banner -->
+    <!-- play -->
+    <!-- end play -->
+    <!-- our plane -->
+    <div class="plane" id="servicios">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="titlepage">
+              <h2>Servicios</h2>
+              <span
+                >Sabemos que una buena calidad de vida incluye además del
+                cuidado de la salud, un proyecto de vida entusiasta que facilite
+                el encuentro con los pares y los seres queridos.</span
+              >
             </div>
-         </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="plan_bax text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos6.jpg" alt="#" />
+              </figure>
+              <div id="ho_plan" class="plan_text">
+                <h3>INSTALACIONES</h3>
+                <p>
+                  Las características edilicias y el equipamiento del
+                  emprendimiento, obedecen a criterios de calidad premium y de
+                  excelencia única.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="plan_bax text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos13.png" alt="#" />
+              </figure>
+              <div id="ho_plan" class="plan_text">
+                <h3>ACTIVIDADES</h3>
+                <p>
+                  Actividades grupales recreativo-terapéuticas que estimulan el
+                  funcionamiento físico y cognitivo, y favorecen la interacción
+                  social.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="plan_bax text_align_center">
+              <figure>
+                <img
+                  src="https://residenciagalia.com.ar/wp-content/uploads/2019/07/Galia-3-3.jpg"
+                  alt="#"
+                />
+              </figure>
+              <div id="ho_plan" class="plan_text">
+                <h3>SERVICIOS</h3>
+                <p>
+                  Somos los primeros en trabajar con un novedoso enfoque
+                  centrado en la persona, enfocando nuestro servicio en tres
+                  pilares fundamentales: <br />
+                  <strong>EXPERIENCIA</strong> <br />
+                  <strong>FORMACIÓN PROFESIONAL</strong> <br />
+                  <strong>CALIDEZ HUMANA</strong> <br />
+                   
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- our plane -->
-      <!--Galery-->
-      <div class="groomsmen" id="galeria">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="titlepage">
-                     <h2>Nuestras imágenes</h2>
-                     <span>Conocé nuestras instalaciones</span>
-                  </div>
-               </div>
+    </div>
+    <!-- our plane -->
+    <!--Galery-->
+    <div class="groomsmen" id="galeria">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="titlepage">
+              <h2>Nuestras imágenes</h2>
+              <span>Conocé nuestras instalaciones</span>
             </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos6.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos7.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos8.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos9.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos10.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos11.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="brid text_align_center">
-                     <figure><img src="images/residenciaAdultos12.jpg" alt="#"/></figure>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos6.jpg" alt="#" />
+              </figure>
             </div>
-            <div class="row buttonCenter">
-               <!-- <a class="read_more text_align_center" href="#inicio"> VER MÁS</a> -->
+          </div>
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos7.jpg" alt="#" />
+              </figure>
             </div>
-         </div>
+          </div>
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos8.jpg" alt="#" />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos9.jpg" alt="#" />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos10.jpg" alt="#" />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos11.jpg" alt="#" />
+              </figure>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="brid text_align_center">
+              <figure>
+                <img src="images/residenciaAdultos12.jpg" alt="#" />
+              </figure>
+            </div>
+          </div>
+        </div>
+        <div class="row buttonCenter">
+          <!-- <a class="read_more text_align_center" href="#inicio"> VER MÁS</a> -->
+        </div>
       </div>
-      <!--end Galery-->
-      <!-- about -->
-      <div class="about" id="nosotros">
-         <div class="container ">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="titlepage">
-                     <h2>Sobre Nosotros</h2>
-                  </div>
-               </div>
+    </div>
+    <!--end Galery-->
+    <!-- about -->
+    <div class="about" id="nosotros">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="titlepage">
+              <h2>Sobre Nosotros</h2>
             </div>
-            <div class="row d_flex">
-               <div class="col-md-7">
-                  <div class="titlepage aboutUs">
-                     <h3 class="subtitle">Galia está creada y dirigida por un equipo profesional de médicos especialistas con más de 30 años de experiencia en la asistencia integral a adultos mayores.</h3>
-                     <p>Somos los primeros en trabajar con un novedoso enfoque centrado en la persona: el bienestar, desarrollo de las potencialidades, intereses y la calidad de vida de nuestros residentes, respetando su individualidad.</p>
-                     <p>Con una amplia experiencia en salud y en dirección de residencias de adultos mayores, ofrecemos un novedoso concepto de servicio basado en tres pilares que promueven una atención de alta calidad:</p>
-                        
-                        <p>La formación profesional y excelencia médica.</p> 
-                        
-                        <p>La experiencia y calidez humana, que nos permiten abordar todas las complejidades del cuidado y la convivencia.</p> 
-                        
-                        <p>El ámbito y lugar de desarrollo, concebido exclusivamente desde el inicio para este fin.</p>
-                     <!-- <a class="read_more" href="nosotros.html"> LEER MÁS</a> -->
-                  </div>
-               </div>
-               <div class="col-md-5">
-                  <div class="about_img">
-                     <figure><img src="images/residenciaAdultos13.png" alt="#"/></figure>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="row d_flex">
+          <div class="col-md-7">
+            <div class="titlepage aboutUs">
+              <h3 class="subtitle">
+                Galia está creada y dirigida por un equipo profesional de
+                médicos especialistas con más de 30 años de experiencia en la
+                asistencia integral a adultos mayores.
+              </h3>
+              <p>
+                Somos los primeros en trabajar con un novedoso enfoque centrado
+                en la persona: el bienestar, desarrollo de las potencialidades,
+                intereses y la calidad de vida de nuestros residentes,
+                respetando su individualidad.
+              </p>
+              <p>
+                Con una amplia experiencia en salud y en dirección de
+                residencias de adultos mayores, ofrecemos un novedoso concepto
+                de servicio basado en tres pilares que promueven una atención de
+                alta calidad:
+              </p>
+
+              <p>La formación profesional y excelencia médica.</p>
+
+              <p>
+                La experiencia y calidez humana, que nos permiten abordar todas
+                las complejidades del cuidado y la convivencia.
+              </p>
+
+              <p>
+                El ámbito y lugar de desarrollo, concebido exclusivamente desde
+                el inicio para este fin.
+              </p>
+              <!-- <a class="read_more" href="nosotros.html"> LEER MÁS</a> -->
             </div>
-         </div>
+          </div>
+          <div class="col-md-5">
+            <div class="about_img">
+              <figure>
+                <img src="images/residenciaAdultos13.png" alt="#" />
+              </figure>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- end about -->
-      <!-- blog -->
-      <!-- <div class="blog">
+    </div>
+    <!-- end about -->
+    <!-- blog -->
+    <!-- <div class="blog">
          <div class="container ">
             <div class="row">
                <div class="col-md-12">
@@ -352,9 +458,9 @@
             </div>
          </div>
       </div> -->
-      <!-- end blog -->
-      <!-- says -->
-      <!-- <div class="says">
+    <!-- end blog -->
+    <!-- says -->
+    <!-- <div class="says">
          <div class="container-fluid">
             <div class="row">
                <div class="col-md-12">
@@ -443,95 +549,148 @@
             </div>
          </div>
       </div> -->
-      <!-- end says -->
-      <!--  contact -->
-      <div class="contact" id="contacto">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <div class="ru_bg">
-                     <div class="row">
-                        <div class="col-md-3">
-                          <!-- <a href="index.html"> <img class="logo_fooetr" src="images/logo_footer.png" alt="#"/></a> -->
-                        </div>
-                        <div class="col-md-9">
-                           <ul class="lacation">
-                              <li><i class="fa fa-map-marker" aria-hidden="true"></i> Juramento 3184, Ciudad de Buenos Aires. </li>
-                              <li><i class="fa fa-volume-control-phone" aria-hidden="true"></i>52415709</li>
-                              <li><i class="fa fa-envelope" aria-hidden="true"></i> info@residenciagarden.com.ar</li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+    <!-- end says -->
+    <!--  contact -->
+    <div class="contact" id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="ru_bg">
+              <div class="row">
+                <div class="col-md-3">
+                  <!-- <a href="index.html"> <img class="logo_fooetr" src="images/logo_footer.png" alt="#"/></a> -->
+                </div>
+                <div class="col-md-9">
+                  <ul class="lacation">
+                    <li>
+                      <i class="fa fa-map-marker" aria-hidden="true"></i>
+                      Juramento 3184, Ciudad de Buenos Aires.
+                    </li>
+                    <li>
+                      <i
+                        class="fa fa-volume-control-phone"
+                        aria-hidden="true"
+                      ></i
+                      >52415709
+                    </li>
+                    <li>
+                      <i class="fa fa-envelope" aria-hidden="true"></i>
+                      info@residenciagarden.com.ar
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="col-md-12">
-                     <div class="titlepage">
-                        <h2>Contáctenos</h2>
-                     </div>
-                  </div>
-                  <form id="request" class="main_form">
-                     <div class="row">
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Nombre" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Numero de teléfono" type="type" name="Phone number">                          
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                        </div>
-                        <div class="col-md-12">
-                           <textarea class="textarea" placeholder="Mensaje" type="type" Message="Name"></textarea>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                           <button class="read_more">Enviar</button>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                           <ul class="social_icon">
-                              <li><a href="Javascript:void(0)"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                              <li><a href="Javascript:void(0)"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                              <li><a href="Javascript:void(0)"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                              <li><a href="Javascript:void(0)"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                           </ul>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-               <div class="col-md-6">
-                  <div class="map_main">
-                     <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4881355651687!2d-58.464038499999994!3d-34.5665133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb678b3868e61%3A0xa08604a13c73da3b!2sJuramento%203184%2C%20C1428DOD%20CABA!5e0!3m2!1ses-419!2sar!4v1681260888033!5m2!1ses-419!2sar" width="600" height="378" frameborder="0" style="border:0; width: 100%;" allowfullscreen=""></iframe>
-                     </div>
-                  </div>
-               </div>
+          </div>
+        </div>
+        <div class="row d_flex">
+          <div class="col-md-6">
+            <div class="col-md-12">
+              <div class="titlepage">
+                <h2>Contáctenos</h2>
+              </div>
             </div>
-         </div>
+            <form id="request" class="main_form">
+              <div class="row">
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Nombre"
+                    type="type"
+                    name="Name"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Numero de teléfono"
+                    type="type"
+                    name="Phone number"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <input
+                    class="contactus"
+                    placeholder="Email"
+                    type="type"
+                    name="Email"
+                  />
+                </div>
+                <div class="col-md-12">
+                  <textarea
+                    class="textarea"
+                    placeholder="Mensaje"
+                    type="type"
+                    Message="Name"
+                  ></textarea>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <button class="read_more">Enviar</button>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <ul class="social_icon">
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-facebook" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-twitter" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-instagram" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="Javascript:void(0)"
+                        ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="map_main">
+              <div class="map-responsive">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.4881355651687!2d-58.464038499999994!3d-34.5665133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb678b3868e61%3A0xa08604a13c73da3b!2sJuramento%203184%2C%20C1428DOD%20CABA!5e0!3m2!1ses-419!2sar!4v1681260888033!5m2!1ses-419!2sar"
+                  width="600"
+                  height="378"
+                  frameborder="0"
+                  style="border: 0; width: 100%"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- end contact -->
-      <!--  footer -->
-      <footer>
-         <div class="footer">
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-8 offset-md-2">
-                        
-                     </div>
-                  </div>
-               </div>
+    </div>
+    <!-- end contact -->
+    <!--  footer -->
+    <footer>
+      <div class="footer">
+        <div class="copyright">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2"></div>
             </div>
-         </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>

@@ -531,7 +531,7 @@ ul.search li a:hover {
 }
 
 .plan_text p {
-     color: #fff;
+     color: rgba(0,0,0,.6);
      font-weight: 400;
      font-size: 17px;
      line-height: 27px;
